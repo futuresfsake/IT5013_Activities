@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { router } from "expo-router";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Platform } from "react-native";
 
 export default function SpotifySignUpScreen() {
   const [email, setEmail] = useState("");
@@ -16,6 +16,7 @@ export default function SpotifySignUpScreen() {
         source={{
           uri: "https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png",
         }}
+        resizeMode="contain"
         style={styles.logo}
       />
       <Text style={styles.title}>Spotify</Text>
@@ -183,6 +184,14 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 60,
     marginBottom: 20,
+    // Mobile shadows
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 3,
+    // Web shadow
+    boxShadow: Platform.OS === "web" ? "0px 2px 5px rgba(0,0,0,0.2)" : undefined
   },
   signUpText: {
     color: "#fff",

@@ -1,9 +1,33 @@
-import React from "react";
+// app/(drawer)/Profile_Screen.tsx
+import React, { useState, useEffect } from "react";
 import { router } from "expo-router";
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function ProfileScreen() {
+  const [username, setUsername] = useState("John Doe");
+  const [email, setEmail] = useState("johndoe@example.com");
+  const [genre, setGenre] = useState("Pop");
+  const [imageUri, setImageUri] = useState<string | null>(null);
+
+  // Load the last saved profile from AsyncStorage
+  useEffect(() => {
+    (async () => {
+      const savedProfiles = await AsyncStorage.getItem("profiles");
+      if (savedProfiles) {
+        const profiles = JSON.parse(savedProfiles);
+        const lastProfile = profiles[profiles.length - 1];
+        if (lastProfile) {
+          setUsername(lastProfile.username || "John Doe");
+          setEmail(lastProfile.email || "johndoe@example.com");
+          setGenre(lastProfile.genre || "Pop");
+          setImageUri(lastProfile.imageUri || null);
+        }
+      }
+    })();
+  }, []);
+
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -15,14 +39,14 @@ export default function ProfileScreen() {
       {/* Profile Picture */}
       <Image
         source={{
-          uri: "https://www.upwork.com/mc/documents/Jenna-Kang-Graham-photo-size.jpg",
+          uri: imageUri || `https://via.placeholder.com/140?text=${genre}`,
         }}
         style={styles.profilePic}
       />
 
       {/* User Info */}
-      <Text style={styles.name}>John Doe</Text>
-      <Text style={styles.email}>johndoe@example.com</Text>
+      <Text style={styles.name}>{username}</Text>
+      <Text style={styles.email}>{email}</Text>
 
       {/* Stats Section */}
       <View style={styles.statsContainer}>
@@ -43,7 +67,7 @@ export default function ProfileScreen() {
       {/* Edit Button */}
       <TouchableOpacity
         style={styles.editButton}
-        onPress={() => router.replace("/settings")}
+        onPress={() => router.push("/(drawer)/ProfileForm")}
       >
         <Ionicons name="pencil" size={18} color="#fff" style={{ marginRight: 6 }} />
         <Text style={styles.editText}>Edit Profile</Text>
@@ -55,7 +79,7 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#121212", // Spotify dark background
+    backgroundColor: "#121212",
     alignItems: "center",
     paddingTop: 80,
   },
@@ -114,10 +138,14 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 40,
     borderRadius: 30,
-    shadowColor: "#1DB954",
-    shadowOpacity: 0.5,
-    shadowRadius: 6,
-    elevation: 5,
+    ...(Platform.OS === "web"
+      ? { boxShadow: "0px 6px 10px rgba(29, 185, 84, 0.5)" }
+      : {
+          shadowColor: "#1DB954",
+          shadowOpacity: 0.5,
+          shadowRadius: 6,
+          elevation: 5,
+        }),
   },
   editText: {
     color: "#fff",

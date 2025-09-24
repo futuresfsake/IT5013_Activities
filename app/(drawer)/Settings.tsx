@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Switch, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Switch, TouchableOpacity, Platform } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 
@@ -86,6 +86,15 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: 25,
     alignItems: "center",
+    // Shadow for mobile, boxShadow for web
+    ...(Platform.OS === "web"
+      ? { boxShadow: "0px 6px 10px rgba(29, 185, 84, 0.5)" }
+      : {
+          shadowColor: "#1DB954",
+          shadowOpacity: 0.5,
+          shadowRadius: 6,
+          elevation: 5,
+        }),
   },
   logoutText: {
     color: "#fff",

@@ -21,6 +21,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/savory.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Savory Meals</Text>
           </TouchableOpacity>
@@ -30,6 +31,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/desserts.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Pinoy Desserts</Text>
           </TouchableOpacity>
@@ -39,6 +41,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/drinks.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Drinks</Text>
           </TouchableOpacity>
@@ -48,6 +51,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/snaks.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Snacks & Streetfoods</Text>
           </TouchableOpacity>
@@ -57,6 +61,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/FilBreakFast.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Filipino Breakfasts</Text>
           </TouchableOpacity>
@@ -66,6 +71,7 @@ export default function TabTwoScreen() {
             <Image
               source={require('@/assets/images/streetfood.png')}
               style={styles.cardImage}
+              resizeMode="cover"
             />
             <Text style={styles.cardText}>Healthy Choices</Text>
           </TouchableOpacity>
@@ -78,13 +84,13 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#fff', // ✅ forced white background for the whole screen
+    backgroundColor: '#fff',
   },
   container: {
     padding: 20,
   },
   titleContainer: {
-      marginTop: 100,
+    marginTop: 100,
     marginBottom: 10,
     alignItems: 'center',
   },
@@ -97,17 +103,16 @@ const styles = StyleSheet.create({
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between', // 2 per row
+    justifyContent: 'space-between',
   },
   card: {
-    width: '45%', // two per row
+    width: '45%',
     alignItems: 'center',
     marginBottom: 25,
   },
   cardImage: {
     width: 100,
     height: 100,
-    resizeMode: 'cover',
     borderRadius: 16,
   },
   cardText: {

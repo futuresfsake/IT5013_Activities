@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, Image, StyleSheet, Text, TouchableOpacity, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function WelcomePage() {
@@ -7,7 +7,11 @@ export default function WelcomePage() {
 
   return (
     <View style={styles.container}>
-      <Image source={require('@/assets/images/Cooking Ina.png')} style={styles.logo} />
+      <Image
+        source={require('@/assets/images/Cooking Ina.png')}
+        resizeMode="contain"
+        style={styles.logo}
+      />
       <TouchableOpacity style={styles.button} onPress={() => router.push("/Signup")}>
         <Text style={styles.buttonText}>Start Cooking</Text>
       </TouchableOpacity>
@@ -26,7 +30,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 450,
     height: 450,
-    resizeMode: 'contain',
     marginBottom: 80,
   },
   button: {
@@ -36,11 +39,14 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     width: '80%',
     alignItems: 'center',
+    // Mobile shadows
     shadowColor: '#000',
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 5,
     elevation: 3,
+    // Web shadow
+    boxShadow: Platform.OS === 'web' ? '0px 2px 5px rgba(0,0,0,0.2)' : undefined,
   },
   buttonText: {
     color: '#000',
