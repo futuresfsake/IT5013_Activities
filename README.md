@@ -28,8 +28,12 @@ Week 3: Drawer & Navigation stack
 <img width="827" height="863" alt="Screenshot 2025-09-11 001809" src="https://github.com/user-attachments/assets/8d61287a-5f44-4b51-9c30-8ed61ab1bf94" />
 
 
-Week 4: Spotify Playlist Builder App
+Week 4: Spotify Playlist Builder App, September 16
+
 Act 1:
+Playlist Interface. State Management
+
+<img width="611" height="911" alt="Week4-SpotifyPlaylist" src="https://github.com/user-attachments/assets/739a97ce-c6f3-4dd5-9fa6-6a0d20689297" />
 
 
 
