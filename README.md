@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+Hi! I am Chelsea Colaljo.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+Week 1 - Setting Up React Environment
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+Week 2: Component Scavenger Hunt Aug 28, 2025
 
-   ```bash
-   npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+<img width="856" height="921" alt="Week2-ScavengerHunt" src="https://github.com/user-attachments/assets/9140709c-749c-4ad3-97ec-8a13b340727f" />
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Week 2: Spotify Login & Sign-Up
+<img width="828" height="873" alt="Screenshot 2025-09-11 001728" src="https://github.com/user-attachments/assets/72f79da5-8227-422b-aa0e-7b4ba2a083ed" />
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<img width="856" height="904" alt="week3-login" src="https://github.com/user-attachments/assets/4c5cd7ff-af2f-428f-9527-931159e18ebe" />
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Week 3: Drawer & Navigation stack
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+<img width="813" height="879" alt="Screenshot 2025-09-11 001754" src="https://github.com/user-attachments/assets/723ab414-b2e0-473f-a29d-6d26fb39e5a7" />
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+<img width="843" height="874" alt="Screenshot 2025-09-11 001817" src="https://github.com/user-attachments/assets/b4548650-7125-45bc-9e6b-2abea237d100" />
 
-## Join the community
+<img width="827" height="863" alt="Screenshot 2025-09-11 001809" src="https://github.com/user-attachments/assets/8d61287a-5f44-4b51-9c30-8ed61ab1bf94" />
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Week 4: Spotify Playlist Builder App, September 16
+
+Act 1:
+Playlist Interface. State Management
+
+<img width="611" height="911" alt="Week4-SpotifyPlaylist" src="https://github.com/user-attachments/assets/739a97ce-c6f3-4dd5-9fa6-6a0d20689297" />
+
+
+
+Act 2: Spotify Profile Creation Form September 18
+<img width="512" height="783" alt="week4-act2-prof" src="https://github.com/user-attachments/assets/ffa7147c-933d-4eba-983d-8371a4d4aed6" />
+
+<img width="524" height="703" alt="week4-spotify-prof" src="https://github.com/user-attachments/assets/f1729d27-40f6-4605-bf7f-9d00fc1b1d55" />
+
