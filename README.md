@@ -37,4 +37,8 @@ Playlist Interface. State Management
 
 
 
-Act 2: 
+Act 2: Spotify Profile Creation Form September 18
+<img width="512" height="783" alt="week4-act2-prof" src="https://github.com/user-attachments/assets/ffa7147c-933d-4eba-983d-8371a4d4aed6" />
+
+<img width="524" height="703" alt="week4-spotify-prof" src="https://github.com/user-attachments/assets/f1729d27-40f6-4605-bf7f-9d00fc1b1d55" />
+
