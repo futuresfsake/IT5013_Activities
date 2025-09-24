@@ -28,6 +28,8 @@ Week 3: Drawer & Navigation stack
 <img width="827" height="863" alt="Screenshot 2025-09-11 001809" src="https://github.com/user-attachments/assets/8d61287a-5f44-4b51-9c30-8ed61ab1bf94" />
 
 
+Explanation: Drawer & Stack features are successfully implemented. All pages are smoothly redirected
+
 Week 4: Spotify Playlist Builder App, September 16
 
 Act 1:
@@ -35,10 +37,16 @@ Playlist Interface. State Management
 
 <img width="611" height="911" alt="Week4-SpotifyPlaylist" src="https://github.com/user-attachments/assets/739a97ce-c6f3-4dd5-9fa6-6a0d20689297" />
 
-
+Documentation: Playlist page are now dynamic. You can create, delete, undo, redo the playlists. All are working,
+with the use of dependencies, asyncStorage. Persistence is also successfully implemented.
 
 Act 2: Spotify Profile Creation Form September 18
 <img width="512" height="783" alt="week4-act2-prof" src="https://github.com/user-attachments/assets/ffa7147c-933d-4eba-983d-8371a4d4aed6" />
 
 <img width="524" height="703" alt="week4-spotify-prof" src="https://github.com/user-attachments/assets/f1729d27-40f6-4605-bf7f-9d00fc1b1d55" />
 
+Documentation: Form Validation is successful, handles all inputs. Username form, email form, and predefined list
+are the newest feature added. Profile Screen, edit button redirects to the new page, which is ProfileForm.tsx that handles all
+the inputs. Form Caching using AsyncStorage is working. Dynamic Profile preview is working
+
+Week 5: Theme Switcher 
