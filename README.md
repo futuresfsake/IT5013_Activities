@@ -50,11 +50,19 @@ are the newest feature added. Profile Screen, edit button redirects to the new p
 the inputs. Form Caching using AsyncStorage is working. Dynamic Profile preview is working
 
 Week 5: Theme Switcher 
-a<img width="484" height="863" alt="ACT5" src="https://github.com/user-attachments/assets/11bbf838-5995-4dfd-8326-045f57f2bbe7" />
-<img width="824" height="864" alt="ACT52" src="https://github.com/user-attachments/assets/8a1de96f-e19b-400d-bda6-95a97791153b" />
-<img width="483" height="871" alt="Screenshot 2025-10-06 235638" src="https://github.com/user-attachments/assets/0734779b-cd90-4cee-b1e7-666b4dfa30e4" />
-<img width="486" height="861" alt="ACT57" src="https://github.com/user-attachments/assets/ff631f96-5f57-4375-af4f-44026cdc3a68" />
-<img width="479" height="874" alt="ACT54" src="https://github.com/user-attachments/assets/292ed763-65d4-4d72-a7a2-2d859dd5f530" />
+
+## App Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/11bbf838-5995-4dfd-8326-045f57f2bbe7" alt="ACT5" width="250"/>
+  <img src="https://github.com/user-attachments/assets/8a1de96f-e19b-400d-bda6-95a97791153b" alt="ACT52" width="250"/>
+  <img src="https://github.com/user-attachments/assets/0734779b-cd90-4cee-b1e7-666b4dfa30e4" alt="Screenshot 2025-10-06 235638" width="250"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ff631f96-5f57-4375-af4f-44026cdc3a68" alt="ACT57" width="250"/>
+  <img src="https://github.com/user-attachments/assets/292ed763-65d4-4d72-a7a2-2d859dd5f530" alt="ACT54" width="250"/>
+</p>
 
 Documentation: The theme switcher component is implemented globally and applies to all screens across the application. Any changes to the theme (e.g., switching between light 
 nd dark mode) are reflected throughout all pages in real time.
@@ -66,3 +74,4 @@ nd dark mode) are reflected throughout all pages in real time.
 
 Week 6: Xcode Activity
 Documentation: The Spotify projected successfully worked on XCODE
+<p align="center"> <img src="https://github.com/user-attachments/assets/83b2f9cf-dd0b-437e-8a96-374527474237" alt="image (4)" width="250"/> <img src="https://github.com/user-attachments/assets/ab806511-d98c-4776-8a31-e4c5e833c375" alt="week6xcode" width="250"/> <img src="https://github.com/user-attachments/assets/395dfe7c-776b-47c6-a94f-860f8cad40df" alt="image (3)" width="250"/> <img src="https://github.com/user-attachments/assets/325dc320-4a5a-4795-a524-197feb9db7ac" alt="image (2)" width="250"/> </p>
