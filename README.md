@@ -50,3 +50,19 @@ are the newest feature added. Profile Screen, edit button redirects to the new p
 the inputs. Form Caching using AsyncStorage is working. Dynamic Profile preview is working
 
 Week 5: Theme Switcher 
+a<img width="484" height="863" alt="ACT5" src="https://github.com/user-attachments/assets/11bbf838-5995-4dfd-8326-045f57f2bbe7" />
+<img width="824" height="864" alt="ACT52" src="https://github.com/user-attachments/assets/8a1de96f-e19b-400d-bda6-95a97791153b" />
+<img width="483" height="871" alt="Screenshot 2025-10-06 235638" src="https://github.com/user-attachments/assets/0734779b-cd90-4cee-b1e7-666b4dfa30e4" />
+<img width="486" height="861" alt="ACT57" src="https://github.com/user-attachments/assets/ff631f96-5f57-4375-af4f-44026cdc3a68" />
+<img width="479" height="874" alt="ACT54" src="https://github.com/user-attachments/assets/292ed763-65d4-4d72-a7a2-2d859dd5f530" />
+
+Documentation: The theme switcher component is implemented globally and applies to all screens across the application. Any changes to the theme (e.g., switching between light 
+nd dark mode) are reflected throughout all pages in real time.
+
+
+
+
+
+
+Week 6: Xcode Activity
+Documentation: The Spotify projected successfully worked on XCODE
